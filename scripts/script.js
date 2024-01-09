@@ -10,12 +10,18 @@ let playerOneInputApproved = false;
 let playerTwoInputApproved = false;
 
 while (gameOn) {
-    if (playerOneScore || playerTwoScore === 2 && playerOneScore > playerTwoScore) {
-        window.alert(`Spelare 1 var bäst av tre!`)
+    if (playerOneScore === 2 || playerTwoScore === 2 && playerOneScore > playerTwoScore) {
+        window.alert(`Spelare 1 var bäst av tre!
+        
+        Spelare 1: ${playerOneScore} poäng.
+        Spelare 2: ${playerTwoScore} poäng.`)
         gameOn = false;
     }
-    else if (playerOneScore || playerTwoScore === 2 && playerOneScore < playerTwoScore) {
-        window.alert(`Spelare 2 var bäst av tre!`)
+    else if (playerOneScore === 2 || playerTwoScore === 2 && playerOneScore < playerTwoScore) {
+        window.alert(`Spelare 2 var bäst av tre!
+
+        Spelare 1: ${playerOneScore} poäng.
+        Spelare 2: ${playerTwoScore} poäng.`)
         gameOn = false;
     }
     else {
