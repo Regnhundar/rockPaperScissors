@@ -10,14 +10,14 @@ let playerOneInputApproved = false;
 let playerTwoInputApproved = false;
 
 while (gameOn) {
-    if (playerOneScore === 2 || playerTwoScore === 2 && playerOneScore > playerTwoScore) {
+    if (playerOneScore === 2 && playerOneScore > playerTwoScore) {
         window.alert(`Spelare 1 var bäst av tre!
         
         Spelare 1: ${playerOneScore} poäng.
         Spelare 2: ${playerTwoScore} poäng.`)
         gameOn = false;
     }
-    else if (playerOneScore === 2 || playerTwoScore === 2 && playerOneScore < playerTwoScore) {
+    else if (playerTwoScore === 2 && playerOneScore < playerTwoScore) {
         window.alert(`Spelare 2 var bäst av tre!
 
         Spelare 1: ${playerOneScore} poäng.
