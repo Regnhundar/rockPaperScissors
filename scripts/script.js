@@ -26,7 +26,7 @@ while (gameOn) {
     }
     else {
         while (!playerOneInputApproved) {
-            playerOneChoice = window.prompt(`Spelare 1: Ange antingen sten, sax eller påse.`)
+            playerOneChoice = window.prompt(`Spelare 1: Ange antingen sten, sax eller påse.`).toLowerCase();
             if (!spelarVal.includes(playerOneChoice)) {
                 window.alert(`Spelare1: ${playerOneChoice} är inte en godkänd input.`)
             }
@@ -35,7 +35,7 @@ while (gameOn) {
             }
         }
         while (!playerTwoInputApproved) {
-            playerTwoChoice = window.prompt(`Spelare 2: Ange antingen sten, sax eller påse.`)
+            playerTwoChoice = window.prompt(`Spelare 2: Ange antingen sten, sax eller påse.`).toLowerCase();
             if (!spelarVal.includes(playerTwoChoice)) {
                 window.alert(`Spelare2: ${playerTwoChoice} är inte en godkänd input.`)
             }
